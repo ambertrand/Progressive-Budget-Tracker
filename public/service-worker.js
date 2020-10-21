@@ -1,10 +1,20 @@
 const FILES_TO_CACHE = [
     "/",
     "/index.html",
-    "/style.css",
-    "/assets/js/loadPosts.js",
-    "/assets/images/Angular-icon.png",
+    "/assets/css/style.css",
+    "/assets/js/index.js",
+    // "/assets/images/Angular-icon.png",
     "/manifest.webmanifest",
+    "/assets/images/icons/icon-72x72.png",
+    "/assets/images/icons/icon-96x96.png",
+    "/assets/images/icons/icon-128x128.png",
+    "/assets/images/icons/icon-144x144.png",
+    "/assets/images/icons/icon-152x152.png",
+    "/assets/images/icons/icon-192x192.png",
+    "/assets/images/icons/icon-384x384.png",
+    "/assets/images/icons/icon-512x512.png",
+    'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+    'https://cdn.jsdelivr.net/npm/chart.js@2.8.0',
   ];
   
   const CACHE_NAME = "static-cache-v2";
@@ -31,6 +41,7 @@ const FILES_TO_CACHE = [
               console.log("Removing old cache data", key);
               return caches.delete(key);
             }
+            return Promise.resolve(true);
           })
         );
       })
