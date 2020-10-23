@@ -21,7 +21,7 @@
     * Express
     * MongoDB
     * Compression
-    * Webpack pwa manifest
+    * Webpack
     
 
 ## Developer Notes:
